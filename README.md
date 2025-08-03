@@ -5,7 +5,7 @@
 Built a Random Forest classifier to predict customer purchase with 91% accuracy and 92% precision by analyzing 1200 customer records to find factors influencing purchase decisions for business decisions. 
 
 ### Technical Stack
-Environment: Python 3.10, VS Code, Ubuntu
+Environment: Python 3.10, VS Code, Ubuntu  
 Libraries: scikit-learn, pandas, numpy, matplotlib, seaborn 
 
 ## Problem and Dataset
@@ -23,9 +23,9 @@ and volume of bin.
 
 ## Results
 ### Metrics
-accuracy:               0.9083
+accuracy:               0.9083  
 f-1_score_macro:        0.8840
-f-1_score_micro:        0.9083
+f-1_score_micro:        0.9083  
 precision:              0.9153
 recall:                 0.7606
 hamming_loss:           0.0917
