@@ -29,7 +29,7 @@ f-1_score_micro:        0.9083
 precision:              0.9153  
 recall:                 0.7606  
 hamming_loss:           0.0917  
-jaccard_score:          0.7105
+jaccard_score:          0.7105  
 logloss:                0.2799  
 zero_one_loss:          0.0917  
 roc_auc_score:          0.9405  
