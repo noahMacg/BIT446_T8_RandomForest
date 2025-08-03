@@ -46,6 +46,6 @@ matthews_corrcoef:      0.7748
 - Cumulative gain showed that we can capture approximately 82% of all potential responders by targeting the top 30% of participants. 
 - It will be most beneficial to target marketing efforts to the top 2-3 deciles to gain the most profitable results
 
-***This project shows end-to-end machine learning workflow from business problem, preprocessing, model building and optimization, and actionable insights for businesses.***
+*This project shows end-to-end machine learning workflow from a business problem, preprocessing, model building and optimization, and actionable insights for businesses.*
 
 
