@@ -4,18 +4,22 @@
 ## Overview 
 Built a Random Forest classifier to predict customer purchase with 91% accuracy and 92% precision by analyzing 1200 customer records to find factors influencing purchase decisions for business decisions. 
 
+### Technical Stack
+Environment: Python 3.10, VS Code, Ubuntu
+Libraries: scikit-learn, pandas, numpy, matplotlib, seaborn 
+
 ## Problem and Dataset
 **Business problem:** What features are affecting purchase of grain storage bins?
 
-**Data:** 1,200 records with imbalanced dataset (69%  not purchased, 29% purchased). Features included product type, if a grain storage dryer was included, types of warranty,
+**Data:** 1,200 records with imbalanced dataset (69%  not purchased, 31% purchased). Features included product type, if a grain storage dryer was included, types of warranty,
 and volume of bin. 
 
 ## Technical Approach
 ### Method
 - Data preprocessing: label encoding, 80/20 random stratified split with a seed.
 - Created, fit and tested RF model with hyperparameter tuning.
-- Created wo loops to test different parameter values of max_sample and max_leaf_nodes to find optimal model performance. 
-- Found reducing n_estimators=20 and max_sample=200 had minimal affect on model performance and reduced overfitting and increased computational efficiency respectively. 
+- Created two parameter optimization loops testing max_samples (200-800) and max_leaf_nodes (3-7)
+- Found optimal performance at n_estimators=20, max_samples=200 - reducing overfitting while maintaining accuracy and improving computational efficiency. 
 
 ## Results
 ### Metrics
@@ -32,7 +36,7 @@ roc_auc_score:          0.9405
 matthews_corrcoef:      0.7748
 
 ### Feature Importance
-1. Product ype (43.8%) - Primary purchase driver 
+1. Product Type (43.8%) - Primary purchase driver 
 2. Warranty Type (34.4%) - Secondary driver 
 3. Dryer Availability (12.3%) - Minimal 
 4. Storage Capacity (9.4%) - Minimal 
